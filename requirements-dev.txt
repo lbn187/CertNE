@@ -1,0 +1,5 @@
+# Tests and figure scripts. The run and analysis scripts need only NumPy
+# (see requirements.txt).
+-r requirements.txt
+pytest>=7
+matplotlib>=3.7

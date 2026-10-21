@@ -1,0 +1,9 @@
+===== Stage 3A (leduc, 5000 iters) =====
+  fixed_p200_current: nc=2.722295e-02 moves=25 rejected=0 (121.6s)
+  fixed_p200_avg: nc=2.152212e-02 moves=25 rejected=0 (374.1s)
+  online_exact_avg_p200: nc=1.091408e-01 moves=4 rejected=21 (376.1s)
+  online_tight_p200: nc=1.091408e-01 moves=4 rejected=21 (408.9s)
+    verify accepted=4 violations=0 worst(nc-bound)=-5.465e-02
+  online_tight_p200_persistent: nc=1.091408e-01 moves=4 rejected=21 (356.8s)
+    verify accepted=4 violations=0 worst(nc-bound)=-5.465e-02
+saved logs/stage3a_leduc_5000.csv

@@ -1,0 +1,14 @@
+# Environment that produced the reported run trajectories:
+# Python 3.12.9, NumPy 2.1.2.
+#
+# The RM+ / PRM+ arms reproduce bit-for-bit across NumPy builds. The DPRM+
+# Goofspiel trajectories are sensitive to last-bit floating-point differences
+# (oracle-fraction differences up to 0.06 have been observed across builds),
+# so fix the NumPy version before rerunning the Goofspiel rows.
+numpy==2.1.2
+
+# Nothing else: the run and analysis scripts need only NumPy. The modules in
+# src/ are plain Python and need no build step.
+
+# Figure scripts (figures/gen_fig_*.py) and the tests additionally need the
+# packages in requirements-dev.txt.

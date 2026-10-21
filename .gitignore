@@ -1,0 +1,20 @@
+# Regenerated run logs (see MANIFEST.md §2)
+results/
+
+# Python caches and build artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Local logs and editor files
+*.log
+!experiments/side_experiment/*.log
+.DS_Store
+.vscode/
+
+# Generated figure files; the scripts are tracked
+figures/*.pdf
+figures/*.png
+figures/*.svg
+figures/*.json

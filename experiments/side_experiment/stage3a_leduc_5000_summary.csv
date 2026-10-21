@@ -1,0 +1,6 @@
+alg,working_final_nc,anchor_final_nc,anchor_bound,ref_moves,anchor_moves,bound_violations
+fixed_p200_current,0.027222947539294967,,,25,0,0
+fixed_p200_avg,0.021522118582870564,,,25,0,0
+online_exact_avg_p200,0.10914076044356547,,,4,0,0
+online_tight_p200,0.10914076044356547,,,4,0,0
+online_tight_p200_persistent,0.10914076044356547,,,4,0,0

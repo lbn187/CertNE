@@ -1,0 +1,11 @@
+===== Pilot: certificate-controlled reference homotopy (leduc, 5000 iters) =====
+  fixed_p20: final nc=2.732334e-01  moves=250 rejected=0 (123.7s)
+  fixed_p200: final nc=2.722295e-02  moves=25 rejected=0 (115.7s)
+  cert_expl_p20: final nc=3.520186e-01  moves=2 rejected=248 (126.2s)
+  cert_expl_p20_force10: final nc=2.175332e-01  moves=47 rejected=0 (118.8s)
+  online_tight_p20: final nc=2.731881e-01  moves=3 rejected=247 (287.3s)
+  [verify] online_tight_p20: accepted=3 forced=0 violations=0 worst(nc-bound)=-1.596e-01
+  online_tight_p20_force10: final nc=8.826285e-02  moves=51 rejected=9 (295.7s)
+  [verify] online_tight_p20_force10: accepted=51 forced=18 violations=18 worst(nc-bound)=-3.127e-02
+  saved logs/cert_homotopy_leduc_online.csv
+PILOT-CERT-HOMOTOPY DONE
