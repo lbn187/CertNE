@@ -36,8 +36,13 @@ def reference_logs_available():
 
 
 def load(root=None):
+    d = root or SEQ
+    paths = sorted(glob.glob(os.path.join(d, "*_seed*.json")))
+    if not paths:
+        raise SystemExit(f"no run logs in {d}; run the matching run script first "
+                         f"(MANIFEST.md §2)")
     runs = {}
-    for path in sorted(glob.glob(os.path.join(root or SEQ, "*_seed*.json"))):
+    for path in paths:
         r = json.load(open(path))
         h = r["history"]
         rec = {"gap": np.asarray(h["nash_gap"], float), "t": np.asarray(h["t"]),
@@ -199,6 +204,9 @@ def main():
     a = ap.parse_args()
     a.json_out = a.json_out or os.path.join(a.dir, "summary_seq.json")
     runs = load(a.dir)
+    missing = [x for x in ARMS if x not in runs]
+    if missing:
+        raise SystemExit(f"missing arms in {a.dir}: {missing}")
     seeds = sorted(set.intersection(*(set(runs[x]) for x in ARMS)))
     print(f"grid: {len(ARMS)} arms x {len(seeds)} seeds")
     reg = None
